@@ -31,6 +31,7 @@
         </div>
     </header>
     <nav id="navbar">
+        <button class="menu-toggle">☰</button>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -117,11 +118,11 @@
                 <div>
                     <h3>Technical Skills</h3>
                     <ul>
-                        <li>Programming Languages: Python, Java, C++</li>
-                        <li>Web Technologies: HTML, CSS, JavaScript</li>
-                        <li>Networking: Cisco Networking, Network Security</li>
-                        <li>AI/ML: Machine Learning Algorithms, Data Analysis</li>
-                        <li>Hacking: inbuilt tools, Cybersecurity Basics</li>
+                        <li><strong>Programming Languages:</strong> Python, Java, C++</li>
+                        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Networking:</strong> Cisco Networking, Network Security</li>
+                        <li><strong>AI/ML:</strong> Machine Learning Algorithms, Data Analysis</li>
+                        <li><strong>Hacking:</strong> inbuilt tools, Cybersecurity Basics</li>
                     </ul>
                 </div>
                 <div>
@@ -160,7 +161,7 @@
     </div>
     <section id="Workshops">
         <div class="container">
-            <h2>Workshops & Competiitions</h2>
+            <h2>Workshops & Hackathons</h2>
             <div class="content">
                 <div>
                     <h3>Ethical Hacking Workshop</h3>
@@ -174,13 +175,18 @@
                     <p>• Awarded first prize in logo making competition</p>
                     <p>• Learnt basics of developing an app</p>
                 </div>
-            
+                <div>
+                    <h3>Genzeon Hackathon</h3>
+                    <p><b>Jul 27, 2024</b></p>
+                    <p>• Prepared solution for a statement from a list of problem statements</p>
+                    <p>• Learnt how hackathons work and their importance</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="interests">
         <div class="container">
-            <h2>Interests and Hobbies</h2>
+            <h2>Interests & Hobbies</h2>
             <div class="content">
                 <div>
                     <ul>
@@ -263,6 +269,20 @@
         document.getElementById("navbar").style.top = "0";
         prevScrollpos = currentScrollPos;
         };
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navUl = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            navUl.classList.remove('show');
+        });
+        });
     </script>
 </body>
 </html>
