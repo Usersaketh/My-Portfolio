@@ -443,10 +443,11 @@ nav {
 
   #about img {
     width: 200px;
-    height: 200px;
+    height: 250px;
     border-radius: 10%;
     border:5px white solid;
     margin: 0 auto 20px;
+    margin-top:10px;
   }
 
   .matter {
