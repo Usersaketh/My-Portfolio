@@ -559,6 +559,8 @@ nav {
   #internships .container .content {
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .slider2{
@@ -577,7 +579,9 @@ nav {
   #certifications .container .content {
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    min-height: 1360px;
+    min-height: 1370px;
+    margin-left:auto ;
+    margin-right: auto;
   }
   .cert{
     width: 300px;
@@ -592,6 +596,15 @@ nav {
   }
   .skill-imgs{
     margin-left: -2%;
+  }
+  .cert1{
+    width: 300px;
+    height: 200px;
+  }
+  .cert img{
+    margin-left: auto;
+    margin-right: auto;
+
   }
   .slider{
     width: 300px;
@@ -707,5 +720,3 @@ nav {
     background-attachment: scroll;
   }
 }
-
-
